@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crear una cuenta</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/nodejs.svg"
+      type="image/x-icon"
+    />
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Otros -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- Sweetalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body class="h-screen flex justify-center items-center bg-gray-100">
+    <section class="bg-white p-10 rounded-xl shadow-lg w-3/12">
+      <h1 class="font-bold text-2xl text-gray-600">
+        Crea una <span class="text-cyan-400">cuenta nueva.</span>
+      </h1>
+      <p class="text-sm text-gray-400">Taller de Node.JS S.A de C.V.</p>
+
+      <form class="space-y-4 mt-10">
+        <!-- Nombre -->
+        <div class="space-y-2">
+          <label
+            for="input_name"
+            class="block text-sm font-semibold text-gray-600"
+            >Tu nombre</label
+          >
+          <input
+            id="input_name"
+            type="email"
+            class="w-full py-2 px-4 bg-gray-100 rounded-lg focus:outline-cyan-400"
+            placeholder="Escribe tu nombre completo"
+          />
+        </div>
+        <!-- Correo -->
+        <div class="space-y-2">
+          <label
+            for="input_email"
+            class="block text-sm font-semibold text-gray-600"
+            >Tu correo</label
+          >
+          <input
+            id="input_email"
+            type="email"
+            class="w-full py-2 px-4 bg-gray-100 rounded-lg focus:outline-cyan-400"
+            placeholder="micorreo@email.com"
+          />
+        </div>
+        <!-- Password -->
+        <div class="space-y-2">
+          <label
+            for="input_password"
+            class="block text-sm font-semibold text-gray-600"
+            >Contraseña</label
+          >
+          <input
+            id="input_password"
+            type="password"
+            class="w-full py-2 px-4 bg-gray-100 rounded-lg focus:outline-cyan-400"
+            placeholder="Escribe tu contraseña"
+          />
+        </div>
+
+        <p class="text-sm text-gray-400">
+          ¿Ya tienes una cuenta?
+          <span
+            id="link_login"
+            class="font-semibold text-cyan-400 hover:underline"
+            >Inicia sesión.</span
+          >
+        </p>
+
+        <button
+          id="signin_submit"
+          type="submit"
+          class="bg-transparent py-2 px-4 rounded-lg text-cyan-400 border-2 border-cyan-400 font-semibold hover:bg-cyan-400 hover:text-white transition focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
+        >
+          Crear cuenta.
+        </button>
+      </form>
+      
+    </section>
+
+    <script src="./assets/js/signin.js"></script>
+  </body>
+</html>

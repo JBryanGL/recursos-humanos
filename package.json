@@ -1,0 +1,33 @@
+{
+  "name": "recursos-humanos",
+  "version": "1.0.0",
+  "description": "Proyecto de NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JBryanGL/recursos-humanos"
+  },
+  "keywords": [
+    "API",
+    "REST",
+    "EXPRESS",
+    "NODEJS"
+  ],
+  "author": "JBryanGL",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "flowbite": "^1.6.5",
+    "nodemon": "^2.0.22",
+    "jsonwebtoken": "^9.0.0",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
